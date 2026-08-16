@@ -8,7 +8,7 @@ The project focuses on analyzing a large-scale e-commerce sales dataset, perform
 
 ---
 
-# 1. Project Objectives
+# Project Objectives
 
 - Analyze a large-scale e-commerce sales dataset.
 - Perform data preprocessing and feature engineering.
@@ -24,7 +24,7 @@ The project focuses on analyzing a large-scale e-commerce sales dataset, perform
 
 ---
 
-# 2. Dataset
+# Dataset
 
 The project uses a large-scale e-commerce sales dataset containing **100,000 transaction records**.
 
@@ -42,12 +42,7 @@ The project uses a large-scale e-commerce sales dataset containing **100,000 tra
 - Purchase Date
 - Purchase Time
 
-### Dataset Location
-
-```text
-Dataset/ecommerce_sales_data.csv
-
-3. Technologies Used
+# Technologies Used
 Programming Language
 Python
 Data Analysis
@@ -68,7 +63,9 @@ Microsoft Power BI
 Development Environment
 Visual Studio Code
 Jupyter Notebook
-4. Project Architecture & Workflow
+
+# Project Architecture & Workflow
+
 The project follows a complete analytics and predictive intelligence workflow:
 
 E-Commerce Sales Dataset
@@ -104,7 +101,7 @@ Business Insights
           ↓
 Recommendations
 
-## Workflow Steps
+# Workflow Steps
 Data Loading – Load the e-commerce dataset.
 Data Preprocessing – Clean and prepare the dataset.
 Feature Engineering – Prepare useful features for analysis and modeling.
@@ -116,7 +113,8 @@ Sales Prediction – Generate predicted sales results.
 Power BI Dashboard – Present KPIs, trends, customer behavior, and predictions.
 Business Insights – Identify important patterns and trends.
 Recommendations – Generate data-driven business recommendations.
-5. Data Preprocessing
+
+# Data Preprocessing
 
 The following preprocessing activities were performed:
 
@@ -129,13 +127,14 @@ Converted date columns into appropriate formats.
 Prepared numerical and categorical features.
 Created useful features for analysis.
 Prepared the data for machine learning.
-6. Feature Engineering
+
+# Feature Engineering
 
 Feature engineering was performed to prepare useful variables for analytics and predictive modeling.
 
 Relevant information from product, customer, price, quantity, sales, purchase date, and purchase time was prepared for analysis and machine learning.
 
-7. Exploratory Data Analysis
+# Exploratory Data Analysis
 
 Python was used to explore the e-commerce dataset and understand business patterns.
 
@@ -149,7 +148,8 @@ Gender analysis
 Monthly sales trends
 Yearly sales trends
 Top product analysis
-8. SQL Business Analysis
+
+# SQL Business Analysis
 
 SQL was used to perform business-oriented analysis on the e-commerce sales data.
 
@@ -167,7 +167,8 @@ Category-wise sales analysis
 Customer-related analysis
 Quantity analysis
 Business-oriented queries
-9. Machine Learning & Predictive Analytics
+
+# Machine Learning & Predictive Analytics
 
 Machine learning models were developed to perform predictive analytics on the e-commerce sales data.
 
@@ -194,7 +195,8 @@ The performance of Linear Regression and Random Forest was compared using the ev
 Results are stored in:
 
 Model/model_comparison_results.csv
-10. Sales Prediction
+
+# Sales Prediction
 
 The machine learning model was used to generate predicted sales values.
 
@@ -207,7 +209,8 @@ The prediction results contain:
 Actual Sales
 Predicted Sales
 Prediction Error
-11. Feature Importance
+
+# Feature Importance
 
 Random Forest feature importance was analyzed to identify the features contributing to model predictions.
 
@@ -218,21 +221,24 @@ Model/feature_importance.csv
 Visualization:
 
 Charts/feature_importance.png
-12. Data Visualizations
 
-The project includes the following visualizations.
+# Data Visualizations
+
+The project includes the following visualizations:
 
 Monthly Sales
-Charts/monthly_sales.png
 Yearly Sales
-Charts/yearly_sales.png
 Category Sales
-Charts/category_sales.png
 Actual vs Predicted Sales
-Charts/prediction_vs_actual.png
 Feature Importance
+Visualization Files
+Charts/monthly_sales.png
+Charts/yearly_sales.png
+Charts/category_sales.png
+Charts/prediction_vs_actual.png
 Charts/feature_importance.png
-13. Power BI Interactive Dashboard
+
+# Power BI Interactive Dashboard
 
 An interactive Power BI dashboard was created to visualize e-commerce business performance and predictive analytics results.
 
@@ -261,7 +267,8 @@ Dashboard Data
 Prepared dashboard data is stored in:
 
 Dashboard/Data/
-14. Business Insights
+
+# Business Insights
 
 The analysis provides the following business insights:
 
@@ -273,9 +280,10 @@ Top-selling products can be identified for better product planning.
 Actual versus predicted sales helps assess predictive model performance.
 Feature importance helps identify variables contributing to model predictions.
 SQL analysis provides additional business-oriented insights.
-15. Business Recommendations
 
-Based on the analysis, the following recommendations are proposed.
+# Business Recommendations
+
+Based on the analysis, the following recommendations are proposed:
 
 1. Inventory Planning
 
@@ -305,7 +313,7 @@ Regularly monitor business KPIs through the Power BI dashboard.
 
 Combine SQL analysis, machine learning predictions, and dashboard insights to support business decisions.
 
-16. Project Structure
+# Project Structure
 Big Data Analytics & Predictive Intelligence/
 │
 ├── Dataset/
@@ -340,35 +348,36 @@ Big Data Analytics & Predictive Intelligence/
 │   └── level3_analysis.ipynb
 │
 ├── Report/
-│   └── Big_Data_Analytics_Predictive_Intelligence_Report.docx
+│   └── project_report.docx
 │
 ├── README.md
 └── requirements.txt
-17. How to Run the Project
-Step 1 – Install Required Libraries
+
+# How to Run the Project
+Install Required Libraries
 pip install -r requirements.txt
-Step 2 – Load Dataset into SQLite
+Load Dataset into SQLite
 python SQL/load_data_to_sql.py
-Step 3 – Run SQL Analysis
+Run SQL Analysis
 python SQL/run_sql_analysis.py
-Step 4 – Run Machine Learning
+Run Machine Learning
 python Model/predictive_model.py
-Step 5 – Run Model Comparison
+Run Model Comparison
 python Model/model_comparison.py
-Step 6 – Prepare Dashboard Data
+Prepare Dashboard Data
 python Dashboard/dashboard_data.py
-Step 7 – Open Power BI
+Power BI
 
-Open Power BI Desktop and load the prepared files from:
+Open Power BI Desktop and load the prepared files from: Dashboard/Data/
 
-Dashboard/Data/
-18. Limitations
+# Limitations
 Prediction performance depends on the quality of the available dataset.
 External factors such as market conditions and promotions are not included.
 Customer behavior may change over time.
 The current models may not capture every complex relationship in e-commerce sales.
 Model performance depends on feature quality and data distribution.
-19. Future Enhancements
+
+# Future Enhancements
 Implement advanced time-series forecasting.
 Explore seasonal sales patterns.
 Add more customer behavior features.
@@ -379,7 +388,8 @@ Develop more advanced Power BI dashboards.
 Deploy the predictive model as a web application.
 Implement automated data pipelines.
 Explore distributed big-data technologies for larger datasets.
-20. Conclusion
+
+# Conclusion
 
 The E-Commerce Sales Analytics & Predictive Intelligence project demonstrates a complete data analytics and predictive intelligence pipeline.
 
@@ -391,7 +401,7 @@ The Power BI dashboard provides an interactive view of business KPIs, sales tren
 
 The project demonstrates how data analytics and machine learning can transform raw e-commerce data into useful business insights and support data-driven decision-making.
 
-21. References
+# References
 Python Documentation
 Pandas Documentation
 NumPy Documentation
