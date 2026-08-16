@@ -1,463 +1,417 @@
-PROJECT REPORT
-BIG DATA ANALYTICS & PREDICTIVE INTELLIGENCE
-E-Commerce Sales Analytics & Predictive Intelligence
+# Big Data Analytics & Predictive Intelligence
 
-Level 3 – Data Science & Data Analytics
+## E-Commerce Sales Analytics & Predictive Intelligence
 
-Cognevance Technologies
+**Project Type:** Data Science & Data Analytics – Level 3  
+**Organization:** Cognevance Technologies  
+**Domain:** Big Data Analytics, Predictive Intelligence & Business Intelligence  
+**Dataset Size:** 100,000 Transaction Records  
+**Tools:** Python, SQL, SQLite, Scikit-learn, Power BI, Jupyter Notebook
 
-Project Report
+---
 
-Submitted By:
-Your Name
+# 1. Project Overview
 
-Department:
-Bachelor of Engineering
+The **E-Commerce Sales Analytics & Predictive Intelligence** project is developed as part of the **Cognevance Technologies Data Science & Data Analytics Level 3 project**.
 
-Academic Year: 2026
+The project focuses on transforming a large-scale e-commerce sales dataset into meaningful business insights using data analytics, SQL, machine learning, predictive analytics, and business intelligence techniques.
 
-CERTIFICATE
+The project follows a complete data analytics workflow starting from data loading and preprocessing, followed by exploratory analysis, SQL-based business analysis, machine learning model development, model evaluation, sales prediction, and visualization through an interactive Power BI dashboard.
 
-This is to certify that the project entitled “E-Commerce Sales Analytics & Predictive Intelligence” has been carried out as part of the Cognevance Technologies Data Science & Data Analytics Level 3 Project.
+The main objective is to demonstrate how raw e-commerce transaction data can be transformed into useful insights that support data-driven business decision-making.
 
-The project demonstrates the use of data preprocessing, feature engineering, Python, SQL, machine learning, predictive analytics, and Power BI for business intelligence and decision-making.
+---
 
-Project Guide: ____________________
+# 2. Project Objectives
 
-Student Name: ____________________
+The major objectives of this project are:
 
-Date: ____________________
+- Analyze a large-scale e-commerce sales dataset.
+- Perform data preprocessing and data cleaning.
+- Perform feature engineering for analytics and machine learning.
+- Perform exploratory data analysis using Python.
+- Perform business-oriented analysis using SQL.
+- Store and analyze the dataset using SQLite.
+- Build machine learning models for predictive analytics.
+- Implement Linear Regression for sales prediction.
+- Implement Random Forest Regressor for sales prediction.
+- Compare the performance of different machine learning models.
+- Evaluate model performance using MAE, RMSE, and R² Score.
+- Analyze customer purchasing behavior.
+- Analyze sales trends and product performance.
+- Identify important features using Random Forest feature importance.
+- Create visualizations for important business metrics.
+- Develop an interactive Power BI dashboard.
+- Generate business insights and recommendations.
+- Document the complete project workflow.
 
-DECLARATION
+---
 
-I hereby declare that the project entitled “E-Commerce Sales Analytics & Predictive Intelligence” is my work carried out as part of the Cognevance Technologies Data Science & Data Analytics Level 3 project.
+# 3. Problem Statement
 
-The project was developed using Python, SQL, machine learning techniques, and Microsoft Power BI to perform data analytics and predictive intelligence.
+E-commerce businesses generate large volumes of transaction data containing information about products, customers, prices, quantities, sales, and purchasing behavior.
 
-Name: ____________________
+Analyzing this data manually can make it difficult to identify important sales trends, customer patterns, product performance, and factors affecting sales.
 
-Signature: ____________________
+Therefore, this project aims to develop an analytics and predictive intelligence solution that can:
 
-Date: ____________________
+- Analyze historical e-commerce sales data.
+- Identify important business trends.
+- Understand customer purchasing behavior.
+- Perform business analysis using SQL.
+- Predict sales using machine learning.
+- Compare different predictive models.
+- Identify important predictive features.
+- Present the results through an interactive Power BI dashboard.
 
-ACKNOWLEDGEMENT
+---
 
-I would like to express my sincere gratitude to Cognevance Technologies for providing the opportunity to work on the Data Science & Data Analytics Level 3 project.
+# 4. Dataset Description
 
-I would also like to thank my faculty members, mentors, and everyone who provided guidance and support throughout the development of this project.
+The project uses a large-scale e-commerce sales dataset containing:
 
-This project helped me gain practical knowledge in data preprocessing, exploratory data analysis, SQL, machine learning, predictive analytics, and Power BI dashboard development.
+**100,000 transaction records**
 
-ABSTRACT
+The dataset contains information related to orders, products, customers, sales, and purchase details.
 
-The E-Commerce Sales Analytics & Predictive Intelligence project is a complete data analytics and machine learning project developed using a large-scale e-commerce sales dataset containing 100,000 transaction records.
+## Dataset Features
 
-The project performs data preprocessing, feature engineering, Python-based data analysis, SQL business analysis, machine learning, predictive analytics, and interactive dashboard development.
+- Order ID
+- Product Name
+- Category
+- Price
+- Quantity
+- Total Sales
+- Customer ID
+- Customer Age
+- Customer Gender
+- Purchase Date
+- Purchase Time
 
-Two machine learning models, Linear Regression and Random Forest, were implemented and evaluated using Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R² Score.
+## Dataset Location
 
-An interactive Power BI dashboard was developed to display business KPIs, sales trends, category performance, customer behavior, top products, model comparison, actual versus predicted sales, and feature importance.
-
-The project provides business insights and recommendations that can support inventory planning, product management, customer analysis, marketing planning, and data-driven decision-making.
-
-1. INTRODUCTION
-
-The growth of e-commerce has resulted in the generation of large amounts of sales and customer data. Analyzing this data helps businesses understand their performance, customer behavior, product demand, and sales trends.
-
-The purpose of this project is to develop a complete analytics pipeline that converts raw e-commerce transaction data into meaningful business insights and predictive results.
-
-The project combines:
-
-Data preprocessing
-Feature engineering
-Python analytics
-SQL analysis
-Machine learning
-Predictive analytics
-Power BI visualization
-Business intelligence
-
-The project follows a complete workflow from raw data to business recommendations.
-
-2. PROBLEM STATEMENT
-
-E-commerce businesses generate large amounts of transactional data, but raw data alone does not provide meaningful business information.
-
-There is a need for a system that can:
-
-Analyze large-scale sales data.
-Identify important sales trends.
-Understand customer behavior.
-Identify high-performing products and categories.
-Perform business analysis using SQL.
-Build predictive machine learning models.
-Compare model performance.
-Present results through an interactive dashboard.
-Generate useful business recommendations.
-
-This project addresses these requirements by developing an integrated analytics and predictive intelligence system.
-
-3. PROJECT OBJECTIVES
-
-The main objectives of the project are:
-
-To analyze a large-scale e-commerce sales dataset.
-To perform data preprocessing and cleaning.
-To perform feature engineering.
-To analyze sales and customer behavior using Python.
-To perform business analysis using SQL.
-To implement machine learning models for predictive analytics.
-To compare Linear Regression and Random Forest models.
-To evaluate models using MAE, RMSE, and R² Score.
-To generate sales predictions.
-To develop an interactive Power BI dashboard.
-To analyze business KPIs and sales trends.
-To generate business insights and recommendations.
-To document the complete project architecture and workflow.
-4. DATASET DESCRIPTION
-
-The project uses an e-commerce sales dataset containing:
-
-100,000 transaction records.
-
-The important dataset columns include:
-
-Column	Description
-Order ID	Unique order identifier
-Product Name	Name of the purchased product
-Category	Product category
-Price	Product price
-Quantity	Quantity purchased
-Total Sales	Total sales amount
-Customer ID	Customer identifier
-Customer Age	Age of customer
-Customer Gender	Gender of customer
-Purchase Date	Date of purchase
-Purchase Time	Time of purchase
-Dataset Location
+```text
 Dataset/ecommerce_sales_data.csv
-5. TECHNOLOGIES USED
+
+5. Technologies and Tools Used
 Programming Language
 Python
-Python Libraries
+Data Analysis
 Pandas
 NumPy
+Data Visualization
 Matplotlib
 Seaborn
-Scikit-learn
 Database
 SQLite
 Query Language
 SQL
 Machine Learning
+Scikit-learn
 Linear Regression
 Random Forest Regressor
-Visualization
-Matplotlib
-Seaborn
+Business Intelligence
 Microsoft Power BI
 Development Tools
 Visual Studio Code
 Jupyter Notebook
-Power BI Desktop
-6. PROJECT ARCHITECTURE & WORKFLOW
+6. Project Architecture
 
-The project follows the following architecture:
+The complete project follows the following workflow:
 
-E-Commerce Sales Dataset
-          ↓
-Data Loading
-          ↓
-Data Preprocessing
-          ↓
-Feature Engineering
-          ↓
-     ┌────┴────┐
-     ↓         ↓
-Python      SQL Analysis
-Analysis
-     └────┬────┘
-          ↓
-Machine Learning
-          ↓
-   ┌──────┴──────┐
-   ↓             ↓
-Linear        Random
-Regression    Forest
-   └──────┬──────┘
-          ↓
-Model Evaluation
-     MAE / RMSE / R²
-          ↓
-Sales Prediction
-          ↓
-Power BI Dashboard
-          ↓
-Business Insights
-          ↓
-Recommendations
-Workflow Description
-Data Loading – The 100,000-record e-commerce dataset is loaded.
-Data Preprocessing – The dataset is checked and prepared for analysis.
-Feature Engineering – Relevant features are prepared for analytics and predictive modeling.
-Python Analysis – Python is used for analysis and visualization.
-SQL Analysis – SQLite and SQL are used for business analysis.
-Machine Learning – Linear Regression and Random Forest are implemented.
-Model Evaluation – Models are evaluated using MAE, RMSE, and R² Score.
-Sales Prediction – Prediction results are generated.
-Power BI Dashboard – Interactive business and predictive analytics are presented.
-Business Insights – Important patterns are identified.
-Recommendations – Data-driven recommendations are generated.
-7. DATA PREPROCESSING
+                    E-Commerce Dataset
+                           │
+                           ▼
+                     Data Loading
+                           │
+                           ▼
+                  Data Preprocessing
+                           │
+                           ▼
+                  Feature Engineering
+                           │
+              ┌────────────┴────────────┐
+              │                         │
+              ▼                         ▼
+       Python Analysis             SQL Analysis
+              │                         │
+              └────────────┬────────────┘
+                           │
+                           ▼
+                  Machine Learning
+                           │
+              ┌────────────┴────────────┐
+              │                         │
+              ▼                         ▼
+       Linear Regression          Random Forest
+              │                         │
+              └────────────┬────────────┘
+                           │
+                           ▼
+                   Model Evaluation
+                    MAE / RMSE / R²
+                           │
+                           ▼
+                    Sales Prediction
+                           │
+                           ▼
+                  Feature Importance
+                           │
+                           ▼
+                  Power BI Dashboard
+                           │
+                           ▼
+                   Business Insights
+                           │
+                           ▼
+                  Recommendations
+7. Data Preprocessing
 
-The following preprocessing activities were performed:
+Data preprocessing was performed before conducting analysis and machine learning.
 
-Loaded the dataset using Pandas.
-Checked the number of rows and columns.
-Examined dataset structure.
-Checked data types.
-Checked for missing values.
-Checked for duplicate records.
-Converted date columns into appropriate formats.
-Prepared numerical and categorical features.
-Created useful features for analysis.
-Prepared data for machine learning.
-8. FEATURE ENGINEERING
+The preprocessing workflow includes:
+
+Loading the dataset using Pandas.
+Inspecting the dataset structure.
+Checking the number of rows and columns.
+Examining data types.
+Checking for missing values.
+Checking for duplicate records.
+Converting date-related columns into appropriate formats.
+Preparing numerical variables.
+Preparing categorical variables.
+Organizing the data for further analysis.
+Preparing the dataset for machine learning.
+8. Feature Engineering
 
 Feature engineering was performed to prepare useful variables for analysis and predictive modeling.
 
-The project uses relevant features from:
+Relevant information related to:
 
-Product information
-Customer information
+Product
+Category
 Price
 Quantity
 Sales
-Purchase date
-Purchase time
+Customer
+Customer Age
+Customer Gender
+Purchase Date
+Purchase Time
 
-Feature engineering helps transform raw transaction information into useful analytical features.
+was prepared for further analytics and machine learning.
 
-Insert your feature-engineering screenshot here.
+Feature engineering helps the predictive models learn useful relationships within the available data.
 
-9. EXPLORATORY DATA ANALYSIS
+9. Exploratory Data Analysis
 
-Exploratory Data Analysis was performed to understand sales patterns, customer behavior, and product performance.
+Python-based exploratory data analysis was performed to understand the characteristics and patterns within the e-commerce dataset.
 
-The analysis includes:
+Analysis Areas
+Sales Analysis
 
-Sales analysis
-Category analysis
-Customer analysis
-Age-group analysis
-Gender analysis
-Monthly trends
-Yearly trends
-Top product analysis
-10. SALES ANALYSIS
+Sales performance was analyzed to understand overall business performance.
 
-Sales were analyzed to understand the overall business performance.
+Category Analysis
 
-The analysis includes:
+Sales were analyzed across different product categories.
 
-Total sales
-Monthly sales
-Yearly sales
-Category-wise sales
-Product-wise sales
-Monthly Sales
+Customer Analysis
 
-The monthly sales analysis helps identify changes in sales over different periods.
-
-Insert monthly_sales.png here.
-
-Yearly Sales
-
-Yearly sales analysis helps understand long-term business performance.
-
-Insert yearly_sales.png here.
-
-Category-wise Sales
-
-Category-wise analysis helps identify high-performing product categories.
-
-Insert category_sales.png here.
-
-11. CUSTOMER ANALYSIS
-
-Customer behavior was analyzed using available demographic information.
-
-The analysis includes:
-
-Customer gender
-Customer age groups
-Customer purchasing behavior
-Gender Analysis
-
-The Power BI dashboard presents sales distribution based on customer gender.
-
-Insert dashboard screenshot/cropped gender chart here.
+Customer-related information was analyzed to understand purchasing behavior.
 
 Age Group Analysis
 
-Customer age groups were analyzed to understand purchasing patterns across different age ranges.
+Customers were analyzed across different age groups.
 
-Insert dashboard screenshot/cropped age-group chart here.
+Gender Analysis
 
-12. TOP PRODUCTS ANALYSIS
+Sales were analyzed based on customer gender.
 
-Top products were analyzed based on total sales.
+Monthly Sales Analysis
 
-The Top 10 Products by Sales visualization helps identify products contributing significantly to sales.
+Monthly sales trends were analyzed to identify changes in sales performance over time.
 
-Insert Top 10 Products screenshot here.
+Yearly Sales Analysis
 
-This analysis can support product planning and inventory management.
+Yearly sales trends were analyzed to understand overall sales performance.
 
-13. SQL BUSINESS ANALYSIS
+Product Analysis
+
+Top-performing products were identified based on sales.
+
+10. SQL Business Analysis
 
 SQL was used to perform business-oriented analysis on the e-commerce dataset.
 
-The dataset was loaded into a SQLite database.
+The dataset was loaded into a SQLite database to allow structured querying and analysis.
 
-Database
+SQL Database
 SQL/ecommerce_sales.db
 SQL Files
+SQL/business_analysis.sql
 SQL/load_data_to_sql.py
 SQL/run_sql_analysis.py
-SQL/business_analysis.sql
 SQL Analysis Includes
-Total sales calculation
-Category-wise sales analysis
-Customer-related analysis
-Quantity analysis
-Business-oriented queries
-SQL Workflow
-CSV Dataset
-    ↓
-SQLite Database
-    ↓
-SQL Queries
-    ↓
-Business Analysis
-    ↓
-Business Insights
+Total sales analysis.
+Category-wise sales analysis.
+Quantity analysis.
+Customer-related analysis.
+Business-oriented sales queries.
+Aggregation and filtering of transaction data.
 
-Insert a screenshot of your SQL terminal output here.
+SQL analysis provides an additional business perspective on the dataset.
 
-14. MACHINE LEARNING
+11. Machine Learning & Predictive Analytics
 
-Machine learning models were implemented for predictive analytics.
+Machine learning techniques were used to perform predictive analytics on the e-commerce sales data.
 
-The following models were used:
+Two machine learning models were implemented.
 
-14.1 Linear Regression
+Models Used
+Linear Regression
 
-Linear Regression was implemented as a baseline predictive model.
+Linear Regression was implemented as a baseline predictive model for estimating sales.
 
-It learns the relationship between input features and the target sales value.
+Random Forest Regressor
 
-14.2 Random Forest
+Random Forest Regressor was implemented to capture more complex relationships between the available features and sales.
 
-Random Forest Regressor was implemented as an additional machine learning model.
-
-Random Forest combines multiple decision trees to improve predictive performance.
-
-15. MODEL TRAINING
+12. Model Training
 
 The dataset was divided into training and testing data.
 
-Training Data
+The training dataset was used to train the machine learning models.
 
-Used to train the machine learning models.
+The testing dataset was used to evaluate model performance on unseen data.
 
-Testing Data
+The models were trained using relevant numerical and engineered features available in the dataset.
 
-Used to evaluate model performance on unseen data.
+13. Model Evaluation
 
-The trained models generate predicted sales values that can be compared with actual sales values.
-
-16. MODEL EVALUATION
-
-The models were evaluated using:
+The machine learning models were evaluated using standard regression evaluation metrics.
 
 Mean Absolute Error (MAE)
 
 MAE measures the average absolute difference between actual and predicted values.
 
+MAE = Mean(|Actual - Predicted|)
+
+Lower MAE indicates better prediction accuracy.
+
 Root Mean Squared Error (RMSE)
 
-RMSE measures prediction error and gives greater importance to larger errors.
+RMSE measures the square root of the average squared prediction error.
+
+RMSE = √Mean((Actual - Predicted)²)
+
+Lower RMSE indicates better model performance.
 
 R² Score
 
 R² Score indicates how well the model explains the variation in the target variable.
 
-Model Comparison
+A higher R² Score indicates better explanatory performance.
 
-The project compares:
+14. Model Comparison
 
-Model	MAE	RMSE	R² Score
-Linear Regression	Enter value from CSV	Enter value	Enter value
-Random Forest	Enter value from CSV	Enter value	Enter value
+The performance of:
 
-⚠️ Don't invent these values. Copy the exact values from your Model/model_comparison_results.csv.
+Linear Regression
+Random Forest Regressor
 
-Insert Model RMSE and R² screenshots here.
+was compared using:
 
-17. PREDICTION RESULTS
+MAE
+RMSE
+R² Score
 
-The machine learning model was used to generate prediction results.
+The model comparison results are stored in:
+
+Model/model_comparison_results.csv
+
+The comparison is also visualized in the Power BI dashboard.
+
+15. Sales Prediction
+
+The trained machine learning models were used to generate predicted sales values.
 
 The prediction results are stored in:
 
 Model/prediction_results.csv
 
-The prediction dataset contains:
+The prediction results include information related to:
 
 Actual Sales
 Predicted Sales
 Prediction Error
 
-The actual and predicted values are visualized to understand model performance.
+The actual versus predicted sales results are visualized to understand model prediction performance.
 
-Insert prediction_vs_actual.png here.
+16. Feature Importance Analysis
 
-18. FEATURE IMPORTANCE
-
-Random Forest feature importance was analyzed to identify which features contribute most to the model's predictions.
+Random Forest feature importance was analyzed to identify the variables contributing to model predictions.
 
 The feature importance results are stored in:
 
 Model/feature_importance.csv
 
-The visualization is stored in:
+The corresponding visualization is stored in:
 
 Charts/feature_importance.png
 
-The Power BI dashboard also presents the feature importance results.
+Feature importance helps provide an understanding of which available variables have greater influence on the model predictions.
 
-Insert feature_importance.png here.
+17. Data Visualizations
 
-19. POWER BI INTERACTIVE DASHBOARD
+Several visualizations were generated as part of the project.
 
-An interactive Power BI dashboard was developed to present business and predictive analytics results.
+Monthly Sales Trend
+Charts/monthly_sales.png
+
+Shows the monthly sales pattern.
+
+Yearly Sales Trend
+Charts/yearly_sales.png
+
+Shows yearly sales performance.
+
+Category Sales
+Charts/category_sales.png
+
+Shows sales performance across product categories.
+
+Actual vs Predicted Sales
+Charts/prediction_vs_actual.png
+
+Compares actual sales values with predicted sales values.
+
+Feature Importance
+Charts/feature_importance.png
+
+Shows the importance of features used by the Random Forest model.
+
+18. Power BI Interactive Dashboard
+
+An interactive Power BI dashboard was developed to present the results of the analytics and predictive modeling process.
+
+The dashboard combines business KPIs, sales trends, customer analysis, product analysis, and machine learning results.
 
 Dashboard KPIs
 
-The dashboard contains:
+The dashboard includes:
 
 Total Sales
-Total Orders
 Total Customers
+Total Orders
 Total Quantity Sold
 Dashboard Visualizations
 
 The dashboard includes:
 
 Monthly Sales Trend
-Yearly Sales Trend
 Sales by Category
+Yearly Sales Trend
 Sales by Customer Gender
 Sales by Customer Age Group
 Top 10 Products by Sales
@@ -465,59 +419,78 @@ Actual vs Predicted Sales
 Model RMSE Comparison
 Model R² Score Comparison
 Random Forest Feature Importance
-Interactive Filters
+Dashboard Filters
 
-The dashboard supports interactive filtering using:
+Interactive filtering is provided for relevant business analysis, including:
 
 Category
 Customer Gender
 Purchase Date
+Dashboard Data
 
-INSERT YOUR FINAL POWER BI DASHBOARD SCREENSHOT HERE.
+Prepared dashboard data is stored in:
 
-Dashboard Purpose
+Dashboard/Data/
 
-The dashboard provides an interactive view of business KPIs, sales trends, customer behavior, product performance, model performance, and predictions.
+19. Business Insights
 
-20. BUSINESS INSIGHTS
+The analysis provides several useful business-oriented insights.
 
-The project provides the following insights:
+Sales Performance
 
-The dataset contains 100,000 e-commerce transaction records.
-Sales trends can be analyzed using monthly and yearly sales visualizations.
-Category-wise analysis helps identify high-performing product categories.
-Customer gender and age-group analysis provides information about customer behavior.
-Top product analysis helps identify products contributing significantly to sales.
-Machine learning provides predictive information about sales.
-Model comparison helps determine the better-performing predictive approach.
-Feature importance helps identify variables contributing to Random Forest predictions.
-The Power BI dashboard provides a centralized view of important business KPIs.
+Overall sales and quantity KPIs provide a high-level view of e-commerce business performance.
 
-For any specific "highest category/product" statement, use the exact result from your dashboard rather than adding an unsupported value.
+Sales Trends
 
-21. BUSINESS RECOMMENDATIONS
+Monthly and yearly sales trends help identify changes in sales performance over time.
 
-Based on the analysis, the following recommendations are proposed:
+Category Performance
+
+Category-wise sales analysis helps identify stronger-performing product categories.
+
+Customer Behavior
+
+Customer gender and age-group analysis provide information about customer purchasing behavior.
+
+Product Performance
+
+Top-selling products can be identified for product planning and business analysis.
+
+Predictive Performance
+
+Actual versus predicted sales provides a visual comparison of model predictions against actual sales.
+
+Feature Importance
+
+Random Forest feature importance helps identify variables contributing to model predictions.
+
+SQL-Based Insights
+
+SQL analysis provides structured business-oriented insights from the transaction database.
+
+20. Business Recommendations
+
+Based on the analysis performed in the project, the following recommendations can be considered.
 
 1. Inventory Planning
 
-Use sales trends and predictions to maintain appropriate inventory levels.
+Use historical sales trends and predictive results to support inventory planning.
 
 2. Product Management
 
-Give greater attention to high-performing product categories and products.
+Pay greater attention to high-performing products and product categories.
 
 3. Customer Analysis
 
-Use customer demographic information to understand purchasing behavior.
+Use customer demographic information to understand purchasing patterns.
 
 4. Marketing Planning
 
-Use sales trends and customer insights to support targeted marketing campaigns.
+Use sales and customer insights to support data-driven marketing decisions.
 
 5. Sales Forecasting
 
-Use predictive results to support future sales and inventory planning.
+Use predictive model results to support future sales planning.
 
 6. Performance Monitoring
 
@@ -525,26 +498,26 @@ Regularly monitor important business KPIs using the Power BI dashboard.
 
 7. Data-Driven Decision Making
 
-Combine SQL analysis, machine learning predictions, and dashboard insights to support business decisions.
+Combine Python analytics, SQL analysis, machine learning results, and Power BI visualizations to support business decisions.
 
-22. PROJECT STRUCTURE
+21. Project Structure
 Big Data Analytics & Predictive Intelligence/
 │
 ├── Dataset/
 │   └── ecommerce_sales_data.csv
 │
 ├── SQL/
+│   ├── business_analysis.sql
 │   ├── load_data_to_sql.py
 │   ├── run_sql_analysis.py
-│   ├── business_analysis.sql
 │   └── ecommerce_sales.db
 │
 ├── Model/
 │   ├── predictive_model.py
 │   ├── model_comparison.py
+│   ├── feature_importance.py
 │   ├── model_comparison_results.csv
 │   ├── prediction_results.csv
-│   ├── feature_importance.py
 │   └── feature_importance.csv
 │
 ├── Charts/
@@ -557,84 +530,105 @@ Big Data Analytics & Predictive Intelligence/
 ├── Dashboard/
 │   ├── dashboard_data.py
 │   └── Data/
+│       ├── dashboard_sales_data.csv
+│       ├── model_comparison_results.csv
+│       ├── prediction_results.csv
+│       └── feature_importance.csv
 │
 ├── Notebook/
 │   └── level3_analysis.ipynb
 │
 ├── Report/
-│   └── Big_Data_Analytics_Predictive_Intelligence_Report.docx
+│   └── project_report.docx
 │
 ├── README.md
 └── requirements.txt
-23. HOW TO RUN THE PROJECT
-Step 1 – Install Required Libraries
 
-Open the terminal in the project directory:
-
+22. How to Run the Project
+Step 1: Install Required Libraries
 pip install -r requirements.txt
-Step 2 – Load Data into SQLite
+Step 2: Load Dataset into SQLite
 python SQL/load_data_to_sql.py
-Step 3 – Run SQL Analysis
+Step 3: Run SQL Analysis
 python SQL/run_sql_analysis.py
-Step 4 – Run Machine Learning
+Step 4: Run Predictive Model
 python Model/predictive_model.py
-Step 5 – Run Model Comparison
+Step 5: Run Model Comparison
 python Model/model_comparison.py
-Step 6 – Generate Charts
-
-Run the required chart-generation scripts from the Charts folder.
-
-Step 7 – Prepare Dashboard Data
+Step 6: Generate Feature Importance
+python Model/feature_importance.py
+Step 7: Prepare Dashboard Data
 python Dashboard/dashboard_data.py
-Step 8 – Open Power BI
+Step 8: Open Power BI
 
-Open Power BI Desktop and load the prepared data from:
+Open Microsoft Power BI Desktop and load the prepared files from:
 
 Dashboard/Data/
-Step 9 – View the Dashboard
 
-Use the interactive Power BI dashboard to analyze the business KPIs, sales trends, customer behavior, product performance, and predictive results.
+23. Project Outputs
 
-24. LIMITATIONS
+The major outputs generated by the project include:
 
-The current project has some limitations:
+Dataset
+Dataset/ecommerce_sales_data.csv
+SQLite Database
+SQL/ecommerce_sales.db
+Model Comparison Results
+Model/model_comparison_results.csv
+Prediction Results
+Model/prediction_results.csv
+Feature Importance Results
+Model/feature_importance.csv
+Analytical Charts
+Charts/
+Power BI Dashboard Data
+Dashboard/Data/
+Project Report
+Report/project_report.docx
 
-The quality of predictions depends on the available dataset.
-Sales behavior can be affected by factors not present in the dataset.
-Customer behavior may change over time.
-External factors such as market conditions, promotions, and economic conditions are not included.
-Machine learning performance depends on feature quality and data distribution.
-The current models may not capture all complex relationships in e-commerce sales data.
-25. FUTURE ENHANCEMENTS
+24. Limitations
 
-The project can be further improved by:
+The current project has the following limitations:
 
-Using advanced time-series forecasting models.
-Exploring seasonal sales patterns.
-Adding more customer behavior features.
-Including external business factors.
-Comparing additional machine learning algorithms.
-Performing hyperparameter tuning.
-Creating more advanced Power BI dashboards.
-Deploying the predictive model as a web application.
-Implementing automated data pipelines.
-Exploring distributed big-data technologies for larger datasets.
-26. CONCLUSION
+Prediction performance depends on the quality and characteristics of the available dataset.
+External factors such as market conditions, promotions, competitors, and economic conditions are not included.
+Customer behavior can change over time.
+The implemented models may not capture every complex relationship within e-commerce sales.
+Model performance depends on the available features and data distribution.
+Predictions should be interpreted together with business context.
 
-The E-Commerce Sales Analytics & Predictive Intelligence project successfully demonstrates a complete data analytics and predictive intelligence pipeline.
+25. Future Enhancements
 
-The project uses a 100,000-record e-commerce dataset and applies data preprocessing, feature engineering, Python analytics, SQL business analysis, machine learning, predictive analytics, and Power BI visualization.
+The project can be further enhanced through:
 
-Linear Regression and Random Forest models were implemented and evaluated using MAE, RMSE, and R² Score.
+Advanced time-series forecasting.
+Seasonal sales analysis.
+Additional customer behavior features.
+Inclusion of external business factors.
+Additional machine learning algorithms.
+Hyperparameter tuning.
+Cross-validation.
+Advanced Power BI visualizations.
+Automated data pipelines.
+Web-based deployment of the predictive model.
+Real-time sales monitoring.
+Distributed big-data technologies for larger datasets.
 
-The Power BI dashboard provides an interactive view of business KPIs, sales trends, customer behavior, product performance, model performance, and prediction results.
+26. Conclusion
 
-The project demonstrates how data analytics and machine learning can be used to transform raw e-commerce data into useful business insights and support data-driven decision-making.
+The E-Commerce Sales Analytics & Predictive Intelligence project demonstrates an end-to-end data analytics and predictive intelligence workflow.
 
-27. REFERENCES
+A dataset containing 100,000 e-commerce transaction records was analyzed using Python, SQL, SQLite, machine learning, and Power BI.
 
-Use the following general references:
+The project includes data preprocessing, feature engineering, exploratory data analysis, SQL business analysis, machine learning model development, model evaluation, sales prediction, feature importance analysis, and interactive dashboard development.
 
+Two predictive models, Linear Regression and Random Forest Regressor, were implemented and compared using MAE, RMSE, and R² Score.
+
+The Power BI dashboard brings together important business KPIs, sales trends, customer analysis, product performance, predictive results, model comparison, and feature importance into an interactive visualization platform.
+
+Overall, the project demonstrates how data analytics and predictive intelligence techniques can transform raw e-commerce transaction data into meaningful business insights and support data-driven decision-making.
+
+27. References
 Python Documentation
 Pandas Documentation
 NumPy Documentation
@@ -643,3 +637,31 @@ Seaborn Documentation
 Scikit-learn Documentation
 SQLite Documentation
 Microsoft Power BI Documentation
+
+28. Project Summary
+Component	Implementation
+Dataset	100,000 E-Commerce Transactions
+Programming	Python
+Data Analysis	Pandas, NumPy
+Visualization	Matplotlib, Seaborn
+Database	SQLite
+Query Language	SQL
+Model 1	Linear Regression
+Model 2	Random Forest Regressor
+Evaluation	MAE, RMSE, R² Score
+Prediction	Sales Prediction
+Feature Analysis	Random Forest Feature Importance
+Dashboard	Microsoft Power BI
+Development	Visual Studio Code, Jupyter Notebook
+Organization	Cognevance Technologies
+Project Level	Data Science & Data Analytics – Level 3
+
+29. Author / Project Information
+
+Project: E-Commerce Sales Analytics & Predictive Intelligence
+
+Organization: Cognevance Technologies
+
+Project Level: Data Science & Data Analytics – Level 3
+
+Domain: Big Data Analytics & Predictive Intelligence
